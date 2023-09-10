@@ -26,6 +26,7 @@ class DatabaseExportServiceProvider extends ServiceProvider
                 'Version' => '1.0.0',
                 'Description' => 'MTM Report Package',
             ]);
+
         $this->loadRoutesFrom(__DIR__ . '/route.php');
         if ($this->app->runningInConsole()) {
             $this->commands([
