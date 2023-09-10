@@ -28,6 +28,7 @@ class DatabaseExportServiceProvider extends ServiceProvider
             ]);
 
         $this->loadRoutesFrom(__DIR__ . '/route.php');
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 DbExport::class,
